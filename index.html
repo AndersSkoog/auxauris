@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset = "UTF-8">
+      <!--<meta name="viewport" content="user-scalable=0,width=device-width,height=device-height,initial-scale=1.0">-->
+      <meta name="viewport" content="user-scalable=0,initial-scale=1, maximum-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <script src="/libs/timbre.js"></script>
+      <script src="/libs/cosc.js"></script>
+      <script src="/libs/jquery.min.js"></script>     
+      <script src='/libs/socket.io.js'></script>
+      <script src="/libs/bootstrap.min.js"></script>
+      <title>AuxAuris</title>
+   </head>
+
+   <body style="overflow:hidden">
+      <span id="testslider"></span>
+      <div id="overlay">
+         <div>
+            <div id="spinner"></div>
+            <div id="loadmsg"></div>
+         </div>
+      </div>
+      <span id="modalcontainer"></span>
+      <span id="notification-container"></span>
+      <div id="view" class="container-fluid">
+         <div class="inline" id="playtoggle"></div>
+         <div class="inline" id="bpmctrl"></div>
+         <div id="pageselect"></div>
+         <div id="trackselect"></div>
+         <div id="patternselect"></div>
+         <div id="voicetypeselect"></div>
+         <span id="patternlengthinput" class="inline"></span>
+         <span id="patternparamselect" class="inline"></span>         
+         <span id="patternsteps"></span>                                         
+         <div id="voicepage">
+            <div>
+               <div id="vc1"></div>
+               <div id="vc2"></div>            
+            </div>
+            <div>
+               <div id="vc3" class="inline"></div>
+               <div id="vc4" class="inline"></div>
+               <div id="vc5" class="inline"></div>
+               <div>
+                  <div id="vc8" calss="inline"></div>
+                  <div id="vc6" class="inline"></div>
+                  <div id="vc7" class="inline"></div>
+               </div>
+            </div>
+         </div>
+         <div id="mixerpage">
+            <div id="mixerlvls"></div>
+            <div>
+               <div id="efxctrls0" class="inline"></div> 
+               <div id="efxctrls1" class="inline"></div>
+            </div>
+            <div>
+               <div id="efxctrls2" class="inline"></div> 
+               <div id="efxctrls3" class="inline"></div>
+            </div>                      
+         </div>                         
+         <div id="connectbtn"></div>
+         <div id="nicknameheader"></div>
+         <div id="userlist"></div>
+      </div>
+      <script src="index.js"></script>  
+   </body>
+
+</html>
