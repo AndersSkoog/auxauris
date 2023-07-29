@@ -11,7 +11,7 @@ each track also has an effects section with reverb, compressor and feedback dela
 
 In a jam session, the client application creates a second gui-less instance of the synthengine and sequencer, 
 and its audio output is mixed with the output from the synthengine that the user controls.
-When a user makes a control change, it will be comunicated to the connected client which will control the gui-less instance. 
+When a user makes a control change, it will be communicated to the connected client which will control the gui-less instance. 
 The application state that determine sound is thus reflected to be the same for both clients, and should sound the same, 
 but no audio data needs to be sent over the network.     
 
@@ -30,6 +30,8 @@ associated bugs here. Consider implementing the same functionality without the s
 * Gui:
 Some bugs in the UI, written for an old version of React. Associated performance issues by having so many event handlers, 
 consider sliming it down, perhaps by making a Html-canvas Gui instead.
+
+
 
 
 
