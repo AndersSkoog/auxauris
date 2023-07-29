@@ -3,13 +3,13 @@ Old and unfinished project prototype of a "Groovebox"-style webaudio browser app
 Inspired by the nanoloop android app, and works in a similar fashon.
 You have a number of tracks, each track has an instrument which is controlled by a stepsequencer that can store different patterns.
 There are 4 monophonic instuments to choose from: 
-a basic 1-operator Fm synth,
-a basic subtractive synth with a unison effect,
-a pitch envelope synth that makes kick sounds
-a filtered noise synth for making hihat and snare sounds
-each track also has an effects section with reverb, compressor and feedback delay
+a basic 1-operator Fm synth.
+a basic subtractive synth with a unison effect.
+a pitch envelope synth that makes kick sounds.
+a filtered noise synth for making hihat and snare sounds.
+each track also has an effects section with reverb, compressor and feedback delay.
 
-in a jam session, the client application creates a second gui-less instance of the synthengine and sequencer, 
+In a jam session, the client application creates a second gui-less instance of the synthengine and sequencer, 
 and its audio output is mixed with the output from the synthengine that the user controls.
 When a user makes a control change, it will be comunicated to the connected client which will control the gui-less instance. 
 The application state that determine sound is thus reflected to be the same for both clients, and should sound the same, 
@@ -24,12 +24,12 @@ needs validation of input html elements
 Consider rewriting the synthengine without the Timbre.js library and make use of Audioworklets.
 
 * Session handling:
-Needs a better way of keeping track of connected clients , currently it stores a dictionary in memory in a very awful way,
+Needs a better way of keeping track of connected clients, currently it stores a dictionary in memory in a very awful way,
 associated bugs here. Consider implementing the same functionality without the socket.io library, just use the native browser websocket apis.
 
 * Gui:
-Some bugs in the UI, written for an old version of React. Associated performance issues with many event handlers, 
-Consider sliming it down, perhaps by making a Html-canvas Gui instead.
+Some bugs in the UI, written for an old version of React. Associated performance issues by having so many event handlers, 
+consider sliming it down, perhaps by making a Html-canvas Gui instead.
 
 
 
