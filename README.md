@@ -19,16 +19,13 @@ In the unlikely scenario where someone would feel inclined to continue working o
 * Security
 > Not written with any security in mind, make nessessary production configurations before deploying, 
 needs validation of input html elements 
-
 * Client performance
 > Consider rewriting the synthengine without the Timbre.js library and make use of Audioworklets.
-
 * Session handling:
-> Needs a better way of keeping track of connected clients, currently it stores a dictionary in memory in a very awful way,
+> Needs a better way of keeping track of connected active clients, currently it stores a dictionary in memory in a very awful way,
 associated bugs here. Consider implementing the same functionality without the socket.io library, just use the native browser websocket apis.
-
 * Gui:
-Some bugs in the UI, written for an old version of React. Associated performance issues by having so many event handlers, 
+> Some bugs in the UI, written for an old version of React. Associated performance issues by having so many event listeners, 
 consider sliming it down, perhaps by making a Html-canvas Gui instead.
 
 
