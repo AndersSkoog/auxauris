@@ -1,6 +1,6 @@
 Old and unfinished project prototype of a "Groovebox"-style webaudio browser application where two people can jam with eachother using websockets mediated through a node/express backend.
 
-Inspired by the nanoloop android app, and works in a similar fashon.
+Inspired by the https://nanoloop.com/ android app, and works in a similar fashon.
 You have a number of tracks, each track has an instrument which is controlled by a stepsequencer that can store different patterns.
 There are 4 monophonic instuments to choose from: 
 a basic 1-operator Fm synth.
